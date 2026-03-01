@@ -1,30 +1,21 @@
-Segunda version de la pracica 1. 
+Tercera version de la practica 
 Aproximacion del problema basado en la version 3 del diagrama de clases disponible junto con los archivos. 
 (O no se, la verdad estoy programando esto a las 11 de la noche a dos dias de la fecha de entrega). 
 
-Actualizacion: Ya estan disponibles los 3 personajes y cada uno cuenta con sus propias estrategias para evitar que 
+Actualizacion:
+
+1) Ya estan disponibles los 3 personajes y cada uno cuenta con sus propias estrategias para evitar que 
 un personaje de franquicia distinta obtenga poderes que no le correspondan. 
 
-De hecho si quieres verificar que se cumpla la restriccion de poderes, ingresa el siguiente codigo y veras los siguientes errores en consola:
-Si intentas marcar a un personaje con una interfaz que no le corresponde, la aplicacion no compila. Eso es exactamente el comportamiento que estamos buscando
-		
+2) Los personajes cuentan con capacidad de atacar y defenderse
 
+3) Se busco usar los metodos de las interfaces. Entonces solo tienes que editar los valores de ataque y defensa del personaje que desees agregar 
 
+4) Los personajes cuentan con metodos booleanos que facilitan ciertas tareas de identificar poderes.
 
-              	/**Revision del funcionamiento del MegaBuster**/
-		System.out.println("\nAhora Dittu procede a conseguir un objeto...");
-		b.consigueObjeto(new transformacionMew());
-		b.ocupaObjeto();
-		
-		/**Revision del funcionamiento del Arma electrica**/
-		System.out.println("\nPero ahora Dittu se aburre y cambia de forma...");
-		b.consigueObjeto(new transformacionPikachu());
-		b.ocupaObjeto();
-		
-		/**Revision del funcionamiento del Escudo de Hojas**/
-		System.out.println("\nFinalmente, Dittu tiene mala suerte!");
-		b.consigueObjeto(new transformacionMagikarp());
-		b.ocupaObjeto();
+5) Para evitar que un personaje cargue con mas de un poder, se instauro un metodo de reinicio del objteo especial. 
+
+6) En el metodo main de esta primera version de la practica, se puede entender el comportamiento de los personaje. 
 
 
 
@@ -38,12 +29,4 @@ QUE FALTA?
 
 
 
-Aqui una lista de los integrantes del equipo: 
-
-Pérez Gaytán Ángel Gabriel 320052947
-
-Gustavo Emir Jimenez Cruz 319260603
-
-Jose Victor Hernandez Rodriguez 422033332
-
-
+Planeacion y codigo realizados por:  Pérez Gaytán Ángel Gabriel 320052947
