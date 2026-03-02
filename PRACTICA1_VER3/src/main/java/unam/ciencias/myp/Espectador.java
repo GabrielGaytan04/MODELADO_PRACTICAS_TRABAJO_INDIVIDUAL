@@ -1,8 +1,10 @@
+
 /**
- * Clase encargada de mantener al espectador en la arena.
+ * Clase encargada de generar a un espectador que se encuentra en la 
+ * arena. La idea es que tengamos una lista de estos individuos. 
  **/
 
-public class Espectador{
+public class Espectador implements Observador{
 
 	/**
 	 * Atributos de clase
@@ -22,4 +24,30 @@ public class Espectador{
 		this.nombre = nombre;
 		this.eleccion = eleccion; 
 	}
+	
+	/**
+	 * Implementcion de observador
+	 **/
+	 
+	 public void actualizar(){
+	 	System.out.println("--------LOS DATOS HAN SIDO ACTUALIZADOS EN LA BITACORA-------------");
+	 }
+	 
+	 /**
+	  * Metodos para obtener acceso al nombre y personaje de interes
+	  * del espectador.
+	  **/
+	  public String getNombre(){
+	  	return nombre;
+	  }
+	  public String nombreArchivo(){	
+	  	return nombre + ".txt";
+	  }
+	  
+	  public String conocerPersonajeFavorito(){
+	  	return eleccion;
+	  }	 
+	  public String informacionBasica(){
+	  	return "NOMBRE: " + nombre + "\n" + "ELECCION DE PERSONAJE: " + eleccion;
+	  }
 }

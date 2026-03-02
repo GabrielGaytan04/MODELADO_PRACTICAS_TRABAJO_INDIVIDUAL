@@ -53,40 +53,70 @@ public class Combate{
 	  * Y cuando digo menor a cero, estoy hablando de que el sistema va a modificar ese valor para que forzosamente sea igual a cero 
 	  **/
 	  
-	 public void modoBrutal(){
+	 public String modoBrutal(){
 	
 		
+		/**Variable de retorno donde se guardaran los datos del combate**/
+	 	String retorno = "";
+	 	
+	 	retorno += "\nES HORA DE LA CARNICERIA!!!!!";
+	 	
 	 	/** Mensaje de Bienvenida **/
 	 	System.out.println("ES HORA DE LA CARNICERIA!!!!!");
 	 	
 	 	/** Estructura de contol while **/
 	 	while((primerPeleador.getVida() != 0) &&  (segundoPeleador.getVida() != 0) &&  (tercerPeleador.getVida() != 0)){
 	 	
-	 	/**
-		 * Mensaje iteracion del combate 
-		 **/
-		 System.out.println("\n-----------------------------------------------------------------------------------"+
+	 		/** Mensaje en terminal **/
+			 System.out.println("\n-----------------------------------------------------------------------------------"+
+				  	    "\n------------------------------MODO BRUTAL -----------------------------------------"+
+				   	    "\n----------------------------------------------------------------------------------");
+				   	    
+			/**Agregamos al retorno**/
+			retorno += "\n-----------------------------------------------------------------------------------"+
 				    "\n------------------------------MODO BRUTAL -----------------------------------------"+
-				    "\n----------------------------------------------------------------------------------");
+				    "\n----------------------------------------------------------------------------------";
+
 	 	
 	 		/** Ataques en secuencia **/
 	 		primerPeleador.ataca(segundoPeleador);
+	 		
+	 		/** Mensaje en terminal **/
 	 		System.out.println("\n\nEl ataque de " + primerPeleador.getNombre() + " hacia " + segundoPeleador.getNombre() + " es efectivo!");
 	 		System.out.println("El nivel de salud de " + segundoPeleador.getNombre() + " es " + segundoPeleador.getVida());
 	 		System.out.println(segundoPierde());
 	 		
+	 		
+	 		/**Agregamos al retorno**/
+	 		retorno += "\n\nEl ataque de " + primerPeleador.getNombre() + " hacia " + segundoPeleador.getNombre() + " es efectivo!";
+	 		retorno += "\nEl nivel de salud de " + segundoPeleador.getNombre() + " es " + segundoPeleador.getVida(); 
+	 		retorno += "\n" + segundoPierde();
+	 		
+	 		/** Mensaje en terminal **/
 	 		segundoPeleador.ataca(tercerPeleador);
 	 		System.out.println("\n\nEl ataque de " + segundoPeleador.getNombre() + " hacia " + tercerPeleador.getNombre() + " es efectivo!");
 	 		System.out.println("El nivel de salud de " +  tercerPeleador.getNombre() + " es " + tercerPeleador.getVida());
 	 		System.out.println(terceroPierde());
 	 		
+	 		/**Agregamos al retorno**/
+	 		retorno += "\n\nEl ataque de " + segundoPeleador.getNombre() + " hacia " + tercerPeleador.getNombre() + " es efectivo!";
+	 		retorno += "\nEl nivel de salud de " +  tercerPeleador.getNombre() + " es " + tercerPeleador.getVida();
+	 		retorno += "\n" + terceroPierde();
+	 		
+	 		
+	 		/**Mensaje en terminal **/
 	 		tercerPeleador.ataca(primerPeleador);
 	 		System.out.println("\n\nEl ataque de " + tercerPeleador.getNombre() + " hacia " + primerPeleador.getNombre() + " es efectivo!");
 	 		System.out.println("El nivel de salud " + primerPeleador.getNombre()  + " es " + primerPeleador.getVida());
 	 		System.out.println(primeroPierde());
-	 		
+	
+	 		retorno += "\n\nEl ataque de " + tercerPeleador.getNombre() + " hacia " + primerPeleador.getNombre() + " es efectivo!";
+	 		retorno += "\nEl nivel de salud " + primerPeleador.getNombre()  + " es " + primerPeleador.getVida();
+	 		retorno += "\n" + primeroPierde();
+	 	
 	 		
 	 	}
+	 	return retorno += "\n" + ganadorCombate();
 	 }
 	 
 	 /**
@@ -96,7 +126,13 @@ public class Combate{
 	  * por mas tiempo del necesario. 
 	  **/
 	 
-	 public void modoPoderes(){
+	 public String modoPoderes(){
+	 	
+	 	/**
+	 	 * Creamos cadena de texto que podamos usar como valor de retorno
+	 	 **/
+	 	 String retorno = " ";
+	 
 	 
 	 	/**
 		 * Creamos un valor pseudo aleatorio 	
@@ -130,12 +166,24 @@ public class Combate{
 				 	System.out.println("\n-----------------------------------------------------------------------------------"+
 				   			   "\n------------------------------MODO DE COMBATE 1-----------------------------------"+
 				    			   "\n----------------------------------------------------------------------------------");
+				    			   
+				    	/*Agregamos al retorno*/
+				    	retorno += "\n-----------------------------------------------------------------------------------"+
+				   			   "\n------------------------------MODO DE COMBATE 1-----------------------------------"+
+				    			   "\n----------------------------------------------------------------------------------";
+				    			  
 					
 					/**Revision de vida al comenzar la iteracion**/
 					if((primerPeleador.getVida() == 0) ||(segundoPeleador.getVida() == 0) || tercerPeleador.getVida() == 0){
 						System.out.println(primeroPierde());
+						retorno += "\n" + primeroPierde();
+						
 						System.out.println(segundoPierde());
+						retorno += "\n" + segundoPierde();
+						
 						System.out.println(terceroPierde());
+						retorno += "\n" + terceroPierde();
+						
 						primerPeleador.reinicia();
 						segundoPeleador.reinicia();
 						tercerPeleador.reinicia();
@@ -149,6 +197,12 @@ public class Combate{
 					System.out.println(primerPeleador.getNombre() + " tiene " + primerPeleador.getDefensa() + " puntos de defensa restantes!");
 					System.out.println(primerPeleador.getNombre() + " tiene " + primerPeleador.getVida() + " puntos de vida restantes!");
 					System.out.println(primeroPierde());
+					
+					/*Agregamos al retorno*/
+					retorno += "\n" + primerPeleador.getNombre() + " se defiende de " + segundoPeleador.getNombre();
+					retorno += "\n" + primerPeleador.getNombre() + " tiene " + primerPeleador.getDefensa() + " puntos de defensa restantes!";
+					retorno += "\n" + primerPeleador.getNombre() + " tiene " + primerPeleador.getVida() + " puntos de vida restantes!";
+					retorno += "\n" + primeroPierde();
 
 
 					/**Defensa del segundo peleador del tercero**/
@@ -160,6 +214,12 @@ public class Combate{
 					System.out.println(segundoPeleador.getNombre() + " tiene " + segundoPeleador.getVida() + " puntos de vida restantes!");
 					System.out.println(segundoPierde());
 					
+					/*Agregamos al retorno*/
+					retorno += "\n" + segundoPeleador.getNombre() + " se defiende de " + tercerPeleador.getNombre();
+					retorno += "\n" + segundoPeleador.getNombre() + " tiene " + segundoPeleador.getDefensa() + " puntos de defensa restantes!";
+					retorno += "\n" + segundoPeleador.getNombre() + " tiene " + segundoPeleador.getVida() + " puntos de vida restantes!";
+					retorno += "\n" + segundoPierde();
+					
 					
 					/**Defensa del tercer peleador del primero **/
 					tercerPeleador.defenderse(primerPeleador);
@@ -169,6 +229,15 @@ public class Combate{
 					System.out.println(tercerPeleador.getNombre() + " tiene " + tercerPeleador.getDefensa() + " puntos de defensa restantes!");
 					System.out.println(tercerPeleador.getNombre() + " tiene " + tercerPeleador.getVida() + " puntos de vida restantes!");	
 					System.out.println(terceroPierde());
+					
+					/*Agregamos al retorno*/
+					retorno += "\n" + tercerPeleador.getNombre() + " se defiende de " + primerPeleador.getNombre();
+					retorno += "\n" + tercerPeleador.getNombre() + " tiene " + tercerPeleador.getDefensa() + " puntos de defensa restantes!";
+					retorno += "\n" + tercerPeleador.getNombre() + " tiene " + tercerPeleador.getVida() + " puntos de vida restantes!";
+					retorno += "\n" + terceroPierde();
+					
+					
+					
 					
 				}
 				/**Terminado el while, reiniciamos los poderes de los personajes a nulo, el resto de los datos sigue igual**/
@@ -193,12 +262,23 @@ public class Combate{
 				 	System.out.println("\n-----------------------------------------------------------------------------------"+
 				   			   "\n------------------------------MODO COMBATE 2 --------------------------------------"+
 				    			   "\n----------------------------------------------------------------------------------");
+				    			   
+				    	/*Agregamos al retorno*/
+				    	retorno += "\n-----------------------------------------------------------------------------------"+
+				   			   "\n------------------------------MODO DE COMBATE 2-----------------------------------"+
+				    			   "\n----------------------------------------------------------------------------------";
 				
 					/**Revision de vida al comenzar la pelea**/
 					if((primerPeleador.getVida() == 0) ||(segundoPeleador.getVida() == 0) || tercerPeleador.getVida() == 0 ){
 						System.out.println(primeroPierde());
+						retorno += "\n" + primeroPierde();
+						
 						System.out.println(segundoPierde());
+						retorno += "\n" + segundoPierde();
+						
 						System.out.println(terceroPierde());
+						retorno += "\n" + terceroPierde();
+					
 						primerPeleador.reinicia();
 						segundoPeleador.reinicia();
 						tercerPeleador.reinicia();
@@ -214,6 +294,13 @@ public class Combate{
 					System.out.println(segundoPeleador.getNombre() + " tiene " + segundoPeleador.getVida() + " puntos de vida restantes!");
 					System.out.println(segundoPierde());
 					
+					/*Agregamos al retorno*/
+					retorno += "\n" + segundoPeleador.getNombre() + " se defiende de " + tercerPeleador.getNombre();
+					retorno += "\n" + segundoPeleador.getNombre() + " tiene " + segundoPeleador.getDefensa() + " puntos de defensa restantes!";
+					retorno += "\n" + segundoPeleador.getNombre() + " tiene " + segundoPeleador.getVida() + " puntos de vida restantes!";
+					retorno += "\n" + segundoPierde();
+					
+					
 					/**Defensa primer peleador del segundo**/
 					primerPeleador.defenderse(segundoPeleador);
 					/**Informacion del peleador que se defiende y quien lo ataca**/
@@ -223,6 +310,12 @@ public class Combate{
 					System.out.println(primerPeleador.getNombre() + " tiene " + primerPeleador.getVida() + " puntos de vida restantes!");
 					System.out.println(primeroPierde());
 					
+					/*Agregamos al retorno*/
+					retorno += "\n" + primerPeleador.getNombre() + " se defiende de " + segundoPeleador.getNombre();
+					retorno += "\n" + primerPeleador.getNombre() + " tiene " + primerPeleador.getDefensa() + " puntos de defensa restantes!";
+					retorno += "\n" + primerPeleador.getNombre() + " tiene " + primerPeleador.getVida() + " puntos de vida restantes!";
+					retorno += "\n" + primeroPierde();
+					
 					/**Defensa del tercer peleador del primero **/
 					tercerPeleador.defenderse(primerPeleador);
 					/**Informacion del peleador que se defiende y quien lo ataca**/
@@ -231,6 +324,12 @@ public class Combate{
 					System.out.println(tercerPeleador.getNombre() + " tiene " + tercerPeleador.getDefensa() + " puntos de defensa restantes!");
 					System.out.println(tercerPeleador.getNombre() + " tiene " + tercerPeleador.getVida() + " puntos de vida restantes!");	
 					System.out.println(terceroPierde());
+					
+					/*Agregamos al retorno*/
+					retorno += "\n" + tercerPeleador.getNombre() + " se defiende de " + primerPeleador.getNombre();
+					retorno += "\n" + tercerPeleador.getNombre() + " tiene " + tercerPeleador.getDefensa() + " puntos de defensa restantes!";
+					retorno += "\n" + tercerPeleador.getNombre() + " tiene " + tercerPeleador.getVida() + " puntos de vida restantes!";
+					retorno += "\n" + terceroPierde();
 					
 				}
 				/**Terminado el while, reiniciamos los objetos de los personajes a nulo**/
@@ -254,12 +353,23 @@ public class Combate{
 				 	System.out.println("\n-----------------------------------------------------------------------------------"+
 				   			   "\n-------------------------------MODO COMBATE 3--------------------------------------"+
 				    			   "\n----------------------------------------------------------------------------------");
+				    			   
+				    	/*Agregamos al retorno*/
+				    	retorno += "\n-----------------------------------------------------------------------------------"+
+				   			   "\n------------------------------MODO DE COMBATE 3-----------------------------------"+
+				    			   "\n----------------------------------------------------------------------------------";
 				
 					/* Verificacion adicional al iniciar la iteracion*/
 					if((primerPeleador.getVida() == 0) ||(segundoPeleador.getVida() == 0) || tercerPeleador.getVida() == 0 ){
+						
 						System.out.println(primeroPierde());
+						retorno += "\n" + primeroPierde();
+						
 						System.out.println(segundoPierde());
+						retorno += "\n" + segundoPierde();
+						
 						System.out.println(terceroPierde());
+						retorno += "\n" + terceroPierde();
 						
 						primerPeleador.reinicia();
 						segundoPeleador.reinicia();
@@ -276,6 +386,12 @@ public class Combate{
 					System.out.println(tercerPeleador.getNombre() + "  tiene " + tercerPeleador.getVida() + " puntos de vida restantes!");	
 					System.out.println(terceroPierde());
 					
+					/*Agregamos al retorno*/
+					retorno += "\n" + tercerPeleador.getNombre() + " se defiende de " + primerPeleador.getNombre();
+					retorno += "\n" + tercerPeleador.getNombre() + " tiene " + tercerPeleador.getDefensa() + " puntos de defensa restantes!";
+					retorno += "\n" + tercerPeleador.getNombre() + " tiene " + tercerPeleador.getVida() + " puntos de vida restantes!";
+					retorno += "\n" + terceroPierde();
+					
 					/**Defensa del segundo peleador del tercer**/
 					segundoPeleador.defenderse(tercerPeleador);
 					/**Informacion del peleador que se defiende y quien lo ataca**/
@@ -285,6 +401,12 @@ public class Combate{
 					System.out.println(segundoPeleador.getNombre() + "  tiene  " + segundoPeleador.getVida() + " puntos de vida restantes!");
 					System.out.println(segundoPierde());
 					
+					/*Agregamos al retorno*/
+					retorno += "\n" + segundoPeleador.getNombre() + " se defiende de " + tercerPeleador.getNombre();
+					retorno += "\n" + segundoPeleador.getNombre() + " tiene " + segundoPeleador.getDefensa() + " puntos de defensa restantes!";
+					retorno += "\n" + segundoPeleador.getNombre() + " tiene " + segundoPeleador.getVida() + " puntos de vida restantes!";
+					retorno += "\n" + segundoPierde();
+					
 					/**Defensa primer peleador del segundo**/
 					primerPeleador.defenderse(segundoPeleador);
 					/**Informacion del peleador que se defiende y quien lo ataca**/
@@ -293,6 +415,13 @@ public class Combate{
 					System.out.println(primerPeleador.getNombre() + " tiene  " + primerPeleador.getDefensa() + " puntos de defensa restantes!");
 					System.out.println(primerPeleador.getNombre() + " tiene  " + primerPeleador.getVida() + " puntos de vida restantes!");
 					System.out.println(primeroPierde());
+					
+					/*Agregamos al retorno*/
+					retorno += "\n" + primerPeleador.getNombre() + " se defiende de " + segundoPeleador.getNombre();
+					retorno += "\n" + primerPeleador.getNombre() + " tiene " + primerPeleador.getDefensa() + " puntos de defensa restantes!";
+					retorno += "\n" + primerPeleador.getNombre() + " tiene " + primerPeleador.getVida() + " puntos de vida restantes!";
+					retorno += "\n" + primeroPierde();
+
 				
 				}
 				/**Terminado el while, reiniciamos los objetos de los personajes a nulo**/
@@ -305,6 +434,7 @@ public class Combate{
 		 	
 		 		modoBrutal();
 		 }
+		 return retorno += "\n" + ganadorCombate();
 	 }
 	 
 	 /**

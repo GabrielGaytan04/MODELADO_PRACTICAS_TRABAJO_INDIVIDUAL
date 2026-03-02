@@ -19,9 +19,17 @@ un personaje de franquicia distinta obtenga poderes que no le correspondan.
 
 7) Una clase de combate en la cual los personajes ya pueden tener peleas y  determinar ganadores asi como  perdedores 
 
+8) Una clase Arena con espectadores a los cuales se les generan bitacoras. 
+
 QUE FALTA?
 
--Integrar los elementos del patron observer. 
+-Integrar los elementos del patron observer (POR COMPLETO)
+Aunque la mayoria de los elementos de observer se encuentren, falto agregar de forma convincente al metodo de actualizar dentro
+de la clase arena. 
+
+-Mejorar la forma en la que opera la generacion de bitacoras.
+Aunque el programa ya genera las bitacoras para cada personaje, es en el archivo Tyler.txt donde podremos ver un archivo completo
+Mientras que en las libretas de Kendrik, pacoAmoroso y catriel, solo veremos los resultados de la pelea. 
 
 QUE VERSION DE JAVA SE USO?
 open jdk 11.0.30. 
@@ -35,7 +43,6 @@ Y compilar los archivos .java con el comando:
 javac *.java 
 
 Al menos desde mi experiencia pude probar mejor la aplicacion estando dentro de la carpeta myp
-
 De la misma forma, hay elementos de la implementacion que pueden llegar a ser un poco pobres o que puedan tener una mejor implementacion. 
 Esto se debe a que realice de forma individual el trabajo de 3 personas. Diagramas, programacion y casos de prueba. 
 
