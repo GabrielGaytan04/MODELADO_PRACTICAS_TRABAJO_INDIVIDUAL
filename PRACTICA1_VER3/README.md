@@ -17,10 +17,9 @@ un personaje de franquicia distinta obtenga poderes que no le correspondan.
 
 6) En el metodo main de esta primera version de la practica, se puede entender el comportamiento de los personaje. 
 
+7) Una clase de combate en la cual los personajes ya pueden tener peleas y  determinar ganadores asi como  perdedores 
 
 QUE FALTA?
-
--Una clase de combate 
 
 -Integrar los elementos del patron observer. 
 
@@ -34,6 +33,8 @@ cd src/main/java/unam/ciencias/myp
 
 Y compilar los archivos .java con el comando:
 javac *.java 
+
+Al menos desde mi experiencia pude probar mejor la aplicacion estando dentro de la carpeta myp
 
 De la misma forma, hay elementos de la implementacion que pueden llegar a ser un poco pobres o que puedan tener una mejor implementacion. 
 Esto se debe a que realice de forma individual el trabajo de 3 personas. Diagramas, programacion y casos de prueba. 
