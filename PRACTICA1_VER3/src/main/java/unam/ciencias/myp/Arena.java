@@ -89,6 +89,7 @@ public class Arena implements Sujeto{
 		 		escritor.write(combateDos.modoPoderes());
 		 		escritor.write(combateTres.modoBrutal());
 		 		
+		 		
 		 	} catch (IOException e){
 		 		System.out.println("Un error ocurrio!");
 		 		e.printStackTrace();
@@ -96,6 +97,8 @@ public class Arena implements Sujeto{
 		 }	  
 		  
 	   }
+	   
+
 	   
 	   /**
 	    * Metodo para conoceer al primer espectador de la arena

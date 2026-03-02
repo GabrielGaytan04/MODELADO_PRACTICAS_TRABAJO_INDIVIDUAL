@@ -1,112 +1,67 @@
 NOMBRE: Tyler
-ELECCION DE PERSONAJE: Pikachu
+ELECCION DE PERSONAJE: Dittu
 ES HORA DE LA CARNICERIA!!!!!
 -----------------------------------------------------------------------------------
 ------------------------------MODO BRUTAL -----------------------------------------
 ----------------------------------------------------------------------------------
 
 El ataque de Korby hacia MeganMan es efectivo!
-El nivel de salud de MeganMan es 36
+El nivel de salud de MeganMan es 1
 El segundo peleador sigue en pie
 
 El ataque de MeganMan hacia Dittu es efectivo!
-El nivel de salud de Dittu es 27
+El nivel de salud de Dittu es 2
 El tercer peleador sigue en pie
-
-El ataque de Dittu hacia Korby es efectivo!
-El nivel de salud Korby es 25
-El primer peleador sigue en pie
------------------------------------------------------------------------------------
-------------------------------MODO BRUTAL -----------------------------------------
-----------------------------------------------------------------------------------
-
-El ataque de Korby hacia MeganMan es efectivo!
-El nivel de salud de MeganMan es 26
-El segundo peleador sigue en pie
-
-El ataque de MeganMan hacia Dittu es efectivo!
-El nivel de salud de Dittu es 17
-El tercer peleador sigue en pie
-
-El ataque de Dittu hacia Korby es efectivo!
-El nivel de salud Korby es 15
-El primer peleador sigue en pie
------------------------------------------------------------------------------------
-------------------------------MODO BRUTAL -----------------------------------------
-----------------------------------------------------------------------------------
-
-El ataque de Korby hacia MeganMan es efectivo!
-El nivel de salud de MeganMan es 16
-El segundo peleador sigue en pie
-
-El ataque de MeganMan hacia Dittu es efectivo!
-El nivel de salud de Dittu es 7
-El tercer peleador sigue en pie
-
-El ataque de Dittu hacia Korby es efectivo!
-El nivel de salud Korby es 5
-El primer peleador sigue en pie
------------------------------------------------------------------------------------
-------------------------------MODO BRUTAL -----------------------------------------
-----------------------------------------------------------------------------------
-
-El ataque de Korby hacia MeganMan es efectivo!
-El nivel de salud de MeganMan es 6
-El segundo peleador sigue en pie
-
-El ataque de MeganMan hacia Dittu es efectivo!
-El nivel de salud de Dittu es 0
-El tercer peleador PIERDE!
 
 El ataque de Dittu hacia Korby es efectivo!
 El nivel de salud Korby es 0
 El primer peleador PIERDE!
-El ganador del combate fue: MeganMan 
+El ganador del combate fue: Dittu 
 -----------------------------------------------------------------------------------
-------------------------------MODO DE COMBATE 1-----------------------------------
+------------------------------MODO DE COMBATE 3-----------------------------------
 ----------------------------------------------------------------------------------
-Korby se defiende de MeganMan
-Korby tiene 1 puntos de defensa restantes!
-Korby tiene 4 puntos de vida restantes!
-El primer peleador sigue en pie
-MeganMan se defiende de Dittu
-MeganMan tiene 16 puntos de defensa restantes!
-MeganMan tiene 27 puntos de vida restantes!
-El segundo peleador sigue en pie
-Dittu se defiende de Korby
-Dittu tiene 16 puntos de defensa restantes!
-Dittu tiene 8 puntos de vida restantes!
-El tercer peleador sigue en pie
------------------------------------------------------------------------------------
-------------------------------MODO DE COMBATE 1-----------------------------------
-----------------------------------------------------------------------------------
-Korby se defiende de MeganMan
-Korby tiene 1 puntos de defensa restantes!
-Korby tiene 4 puntos de vida restantes!
-El primer peleador sigue en pie
-MeganMan se defiende de Dittu
-MeganMan tiene 11 puntos de defensa restantes!
-MeganMan tiene 25 puntos de vida restantes!
-El segundo peleador sigue en pie
 Dittu se defiende de Korby
 Dittu tiene 8 puntos de defensa restantes!
-Dittu tiene 2 puntos de vida restantes!
-El tercer peleador sigue en pie
------------------------------------------------------------------------------------
-------------------------------MODO DE COMBATE 1-----------------------------------
-----------------------------------------------------------------------------------
-Korby se defiende de MeganMan
-Korby tiene 1 puntos de defensa restantes!
-Korby tiene 4 puntos de vida restantes!
-El primer peleador sigue en pie
-MeganMan se defiende de Dittu
-MeganMan tiene 8 puntos de defensa restantes!
-MeganMan tiene 23 puntos de vida restantes!
-El segundo peleador sigue en pie
-Dittu se defiende de Korby
-Dittu tiene 4 puntos de defensa restantes!
 Dittu tiene 0 puntos de vida restantes!
 El tercer peleador PIERDE!
+MeganMan se defiende de Dittu
+MeganMan tiene 3 puntos de defensa restantes!
+MeganMan tiene 28 puntos de vida restantes!
+El segundo peleador sigue en pie
+Korby se defiende de MeganMan
+Korby tiene 23 puntos de defensa restantes!
+Korby tiene 8 puntos de vida restantes!
+El primer peleador sigue en pie
 El ganador del combate fue: MeganMan
 ES HORA DE LA CARNICERIA!!!!!
+-----------------------------------------------------------------------------------
+------------------------------MODO BRUTAL -----------------------------------------
+----------------------------------------------------------------------------------
+
+El ataque de Korby hacia MeganMan es efectivo!
+El nivel de salud de MeganMan es 10
+El segundo peleador sigue en pie
+
+El ataque de MeganMan hacia Dittu es efectivo!
+El nivel de salud de Dittu es 24
+El tercer peleador sigue en pie
+
+El ataque de Dittu hacia Korby es efectivo!
+El nivel de salud Korby es 20
+El primer peleador sigue en pie
+-----------------------------------------------------------------------------------
+------------------------------MODO BRUTAL -----------------------------------------
+----------------------------------------------------------------------------------
+
+El ataque de Korby hacia MeganMan es efectivo!
+El nivel de salud de MeganMan es 0
+El segundo peleador PIERDE!
+
+El ataque de MeganMan hacia Dittu es efectivo!
+El nivel de salud de Dittu es 14
+El tercer peleador sigue en pie
+
+El ataque de Dittu hacia Korby es efectivo!
+El nivel de salud Korby es 10
+El primer peleador sigue en pie
 El ganador del combate fue: Dittu
